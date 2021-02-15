@@ -1,2 +1,7 @@
-# hermit-template-rs
-a cargo-generate template for a rusty-hermit application
+# {{ project-name }}
+
+```sh
+cargo generate sassman/hermit-template-rs
+```
+
+

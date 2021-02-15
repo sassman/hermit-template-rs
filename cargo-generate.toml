@@ -1,0 +1,11 @@
+[placeholders.hypervisor]
+type = "string"
+prompt = "What hypervisor to use?"
+choices = ["uhyve", "qemu"]
+default = "qemu"
+
+[placeholders.network]
+type = "string"
+prompt = "Which network to use (only qemu)?"
+choices = ["rtl8139", "virtio"]
+default = "rtl8139"
