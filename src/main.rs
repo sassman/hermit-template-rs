@@ -1,6 +1,7 @@
 #[cfg(target_os = "hermit")]
 use hermit_sys;
 
+{% if network_enabled %}
 use std::net::TcpListener;
 
 fn main() {
@@ -11,3 +12,8 @@ fn main() {
         std::io::copy(&mut &conn, &mut &conn).unwrap();
     }
 }
+{% else %}
+fn main() {
+    println!("Hello Rusty Hermit 🦀");
+}
+{% endif %}
