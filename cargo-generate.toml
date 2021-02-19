@@ -1,3 +1,8 @@
+[placeholders.network_enabled]
+type = "bool"
+prompt = "Want to enable network?"
+default = true
+
 [placeholders.hypervisor]
 type = "string"
 prompt = "What hypervisor to use?"
@@ -9,3 +14,4 @@ type = "string"
 prompt = "Which network to use (only qemu)?"
 choices = ["rtl8139", "virtio"]
 default = "rtl8139"
+
